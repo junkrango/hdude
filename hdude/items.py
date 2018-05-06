@@ -4,11 +4,15 @@
 #
 # See documentation in:
 # https://doc.scrapy.org/en/latest/topics/items.html
+from scrapy import Field, Item
 
-import scrapy
 
-
-class HdudeItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+class HdudeItem(Item):
+    name = Field()
+    url = Field()
+    like_count = Field()
+    view_count = Field()
+    cover_image = Field()
+    tags = Field()
+    source = Field()
+    sources = Field()
